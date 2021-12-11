@@ -1,0 +1,32 @@
+.offcanvas {
+    display: flex;
+    color: var(--fColor);
+}
+.offcanvas_icon {
+    cursor: pointer;
+    color: inherit;
+    font-size: 25px;
+}
+.offcanvas > span {
+    display: flex;
+    width: fit-content;
+}
+
+.offcanvas_off {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 40vw;
+    background-color: rgb(1,4,9);
+}
+#offcanvas_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 600px) {
+    .offcanvas_off {
+        max-width: 60vw;
+    }
+}
