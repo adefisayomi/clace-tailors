@@ -46,7 +46,7 @@ export const NavList = ({vertical, color}) => {
                     user && <li>
                                 <ShowPopover
                                     icon= { <PersonCircle className= {styles.navList_user}/> }
-                                    children= {<UserOption />}
+                                    list= {<UserOption />}
                                 />
                             </li>
                 }

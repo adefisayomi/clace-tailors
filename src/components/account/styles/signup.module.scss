@@ -97,6 +97,16 @@
             width: 100%;
             padding: 5px;
 
+            
+        h1 {
+            font-size: 45px;
+    
+        }
+        p {
+            font-size: 17px;
+    
+        }
+
             >span {
                 flex-direction: column;
                 width: 100%;
@@ -106,8 +116,11 @@
     
     .signup_image {
         width: 100%;
-        padding: 5px;
+        padding: 10px;
         border-left: none;
+        border-bottom: 1px solid var(--light);
+        margin-bottom: 20px;
+
     }
     #signup_input{
         margin-right: 0px;

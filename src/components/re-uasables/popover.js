@@ -3,7 +3,7 @@ import { Popover, Overlay } from 'react-bootstrap'
 import {useState, useRef} from 'react'
 
 
-export default function ShowPopover ({icon, children, position= "bottom", header}) {
+export default function ShowPopover ({icon, list, position= "bottom", header}) {
 
     const [show, setShow] = useState(false);
     const [target, setTarget] = useState(null);
@@ -30,7 +30,7 @@ export default function ShowPopover ({icon, children, position= "bottom", header
           <Popover id="popover-contained" style= {{ marginTop: '5px' }}>
             {/* <Popover.Header as="h3">{header}</Popover.Header> */}
             <Popover.Body>
-              {children}
+              {list}
             </Popover.Body>
           </Popover>
         </Overlay>

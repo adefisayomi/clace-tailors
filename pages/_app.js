@@ -10,7 +10,7 @@ import axios from 'axios'
 
 export default function app ({ Component, pageProps }) {
 
-  axios.defaults.baseURL = process.env.NODE_ENV == 'development' ? 'http://localhost:4000/api' : 'clace-server.devbyclace.com/api'
+  axios.defaults.baseURL = process.env.NODE_ENV == 'development' ? 'http://localhost:4000/api' : 'https://tailorapi.devbyclace.com/api'
   axios.defaults.withCredentials = true
   axios.defaults.headers['Content-Type'] = 'application/json'
 

@@ -61,7 +61,7 @@ export default function Signup () {
 
 
 
-// ------------------------------------------------------------
+// ----------------------------------------------------------------
 
 export const SignupForm = ({getForm, form, handleSubmit, isLoading}) => {
 
@@ -106,7 +106,10 @@ export const SignupForm = ({getForm, form, handleSubmit, isLoading}) => {
             </form>
 
             <div className= {styles.signup_image}>
-                <img src="https://media.istockphoto.com/vectors/cartoon-color-character-person-and-taking-measures-at-tailor-shop-vector-id1219933232?k=20&m=1219933232&s=612x612&w=0&h=7sbE30qYeK9MYYwOq1WzKeLpMvSpihi4UJrJn8_iQhM=" alt="Tailor"/>
+                <img 
+                    src="https://media.istockphoto.com/vectors/cartoon-color-character-person-and-taking-measures-at-tailor-shop-vector-id1219933232?k=20&m=1219933232&s=612x612&w=0&h=7sbE30qYeK9MYYwOq1WzKeLpMvSpihi4UJrJn8_iQhM="
+                    alt="Tailor"
+                />
             </div>
 
         </div>
