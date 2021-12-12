@@ -15,7 +15,7 @@ export default function Wrapper ({children}) {
     // check route
     useEffect(() => {
         const checkRoute = () => {
-            const check = ['login', 'signup']
+            const check = ['login']
             const path = router.route.split('/').pop()
             if (check.includes(path)) {
                 return setShowNav(false)

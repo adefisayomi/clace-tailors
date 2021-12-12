@@ -19,7 +19,7 @@
 .navList {
     color: var(--fColor);
 
-    ul {
+    >ul {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -66,41 +66,18 @@
                 opacity: 1;
                 transform: translate3d(-80%, 0, 0);
               }
-              
-            //   /* Slide in */
-            //   li:nth-child(2) a {
-            //     overflow: hidden;
-            //   }
-              
-            //   li:nth-child(2) a::after {
-                // opacity 1;
-                // transform: translate3d(-100%, 0, 0);
-            //   }
-              
-            //   li:nth-child(2) a:hover::after,
-            //   li:nth-child(2) a:focus::after{
-            //     transform: translate3d(0, 0, 0);
-            //   }
-              
-            //   /* Scale from center */
-            //   li:nth-child(3) a::after {
-            //     opacity 1;
-            //     transform: scale(0);
-            //     transform-origin: center;
-            //   }
-              
-            //   li:nth-child(3) a:hover::after,
-            //   li:nth-child(3) a:focus::after{
-            //     transform: scale(1);
-            //   }
         }
     }
 }
-
+.navList_user {
+    color: var(--blueColor);
+    cursor: pointer;
+    font-size: 20px;
+}
 #navList_vertical {
     flex-direction: column;
 
-    li {
+    >li {
         margin: 5px 0;
     }
 }
@@ -117,4 +94,38 @@
     .nav_icon{
         display: inline;
     }
+}
+
+
+
+// User section
+.useroption{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    min-width: 100px;
+
+    >span {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        font-weight: 600;
+        font-size: 13px;
+        color: black;
+        cursor: pointer;
+        width: 100%;
+        text-transform: capitalize;
+        margin-top: 10px;
+    }
+}
+#useroption_logout{
+    font-weight: 500;
+    font-size: 13px;
+    background-color: black;
+    color: white;
+    width: 100%;
+    border-radius: 4px;
+    padding: 5px 10px;
+    cursor: pointer;
 }

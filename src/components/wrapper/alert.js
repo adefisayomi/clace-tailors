@@ -16,7 +16,7 @@ export default function ShowAlert () {
       }
       else {
         setOpen(false)
-        setTimeout(() => setAlert({}), 500)
+        setTimeout(() => setAlert({}), 200)
       }
   }
 
